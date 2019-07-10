@@ -4,7 +4,7 @@
 import UIKit
 import StoreKit
 
-@objc public class AppReviewHelper: NSObject {
+@objc public class ReviewAssistant: NSObject {
     
     enum DefaultsKey: String {
         case lastReviewRequestAppVersion
