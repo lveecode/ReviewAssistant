@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 s.swift_version = '5.0'
 
 s.name             = 'ReviewAssistant'
-s.version          = '0.1.1'
+s.version          = '0.1.2'
 s.summary          = 'Use ReviewAssistant to summon StoreKits review controller without having to worry about pacing the review requests'
 
 # This description is used to generate tags and improve search results.
@@ -40,7 +40,7 @@ s.source_files = 'ReviewAssistant/Classes/**/*'
 # }
 
 # s.public_header_files = 'Pod/Classes/**/*.h'
-s.frameworks = 'UIKit'
+s.frameworks = 'UIKit', 'StoreKit'
 # s.dependency 'AFNetworking', '~> 2.3'
 # s.default_subspec = 'Core'
 
