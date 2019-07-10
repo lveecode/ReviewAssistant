@@ -1,0 +1,16 @@
+PODS:
+  - ReviewAssistant (0.1.0)
+
+DEPENDENCIES:
+  - ReviewAssistant (from `../`)
+
+EXTERNAL SOURCES:
+  ReviewAssistant:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ReviewAssistant: 0af81b67f5e0d84d2e53f981ba29f3c438bc9533
+
+PODFILE CHECKSUM: 03cdcf11b3ce498af5c2a520f142ef61d3f1edf2
+
+COCOAPODS: 1.7.4

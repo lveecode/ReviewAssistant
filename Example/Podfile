@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ReviewAssistant_Example' do
+  pod 'ReviewAssistant', :path => '../'
+
+  target 'ReviewAssistant_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

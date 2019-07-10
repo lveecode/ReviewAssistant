@@ -1,0 +1,6 @@
+framework module ReviewAssistant {
+  umbrella header "ReviewAssistant-umbrella.h"
+
+  export *
+  module * { export * }
+}
