@@ -39,8 +39,10 @@ import StoreKit
         let crashCooldownDate = UserDefaults.standard.object(forKey: DefaultsKey.appCrashedCooldownDate.rawValue) as? Date
         var appCrashedRecently = crashCooldownDate != nil
         if appCrashedRecently {
-            let diff = Calendar.current.dateComponents([.day], from: Date(), to: crashCooldownDate!)
-            appCrashedRecently = diff.day ?? 0 > 0
+            // "hour" component will be 48 hours, 20 hours, etc, untill
+            // the cooldown date is reached, then it will go into negatives
+            let diff = Calendar.current.dateComponents([.hour], from: Date(), to: crashCooldownDate!)
+            appCrashedRecently = (diff.hour ?? 0) > 0
         }
         
         
